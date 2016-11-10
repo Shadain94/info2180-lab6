@@ -30,7 +30,8 @@
       if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
             var response = httpRequest.responseText;
-            alert(response);
+            var res= document.getElementById('result');
+            res.innerHTML="<h1>RESULT</h1><br>"+response;
         
       } else {
         alert('There was a problem with the request.');
